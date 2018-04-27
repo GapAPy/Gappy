@@ -17,22 +17,27 @@ Example:
 
 ```
 import gappy
-from import Flask, request
+from flask import Flask
+from flask import request
 
 TOKEN = '<your token>'
 
 bot = gappy.Bot(TOKEN)
-
 app = Flask(__name__)
+
 
 @app.route('/', methods=['POST'])
 def parse_request():
-    msg =request.form
-    content_type = msg['type']    
-    chat_id = msg['chat_id']      
+    msg = request.form
+    content_type = msg['type']
+    chat_id = msg['chat_id']
     data = msg['data']
     bot.send_text(chat_id, data)
     return 'OK'
+
+
+if __name__ == '__main__':
+    app.run()
 ```
 
 
@@ -45,5 +50,3 @@ def parse_request():
 ### Contributing
 
 This is a open-source project. Fork the project, complete the code and send pull request.
-
- 
