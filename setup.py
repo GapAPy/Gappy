@@ -17,7 +17,11 @@ setup(
     
     name='gappy',
     packages=['gappy'],
-
+    author = "Sadegh Yazdani, Hossein Hafarzade, Mostafa Asadi",
+    author_email = "m.s.yazdani86@gmail.com",
+    project_urls={
+        "Source Code": "https://github.com/hsin75/Gappy",
+    },
     install_requires=install_requires,
 
     version=version,
@@ -26,10 +30,7 @@ setup(
 
     long_description='',
 
-    url='https://github.com/XXX',
-
-    author='XXX',
-    author_email='XXX',
+    url='https://github.com/hsin75/Gappy',
 
     license='MIT',
 
