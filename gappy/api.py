@@ -24,7 +24,6 @@ def _transform(req, **user_kw):
     fields = _compose_fields(req, **user_kw)
     url = _methodurl(req, **user_kw)
     headers = {'token': token}
-    print('', url, fields, headers, sep='\n>> ')
     if method == 'sendMessage':
         return requests.post, {'url':url, 'data':fields, 'headers':headers}
     elif method == 'upload':
@@ -46,6 +45,5 @@ def _parse(response):
         
 def request(req, **user_kw):
     fn, kwargs = _transform(req, **user_kw)
-    print(fn, kwargs)
     r = fn(**kwargs)  # `fn` must be thread-safe
     return _parse(r)

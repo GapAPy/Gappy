@@ -27,8 +27,7 @@ setup(
     version=version,
 
     description='Python framework for Gap Service API',
-
-    long_description='',
+    long_description='Python framework for Gap Service API',
 
     url='https://github.com/hsin75/Gappy',
 
