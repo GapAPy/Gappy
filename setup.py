@@ -17,7 +17,7 @@ setup(
     
     name='gappy',
     packages=['gappy'],
-    author = "Sadegh Yazdani, Hossein Hafarzade, Mostafa Asadi",
+    author = "Sadegh Yazdani, Hossein Jafarzadeh, Mostafa Asadi",
     author_email = "m.s.yazdani86@gmail.com",
     project_urls={
         "Source Code": "https://github.com/hsin75/Gappy",
