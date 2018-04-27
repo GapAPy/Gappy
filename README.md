@@ -3,8 +3,6 @@ Gappy
 
 Python framework for Gap Service API
 
-#[![Build Status](https://travis-ci.org/itmard/Persian.png?branch=master)](https://travis-ci.org/itmard/Persian)
-
 ### Install Package
 ```
 pip3 install gappy
