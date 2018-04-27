@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
-import sys
+
 
 class GappyException(Exception):
-    """ Base class of following exceptions. """
+    """Base class of following exceptions."""
+
     pass
+
 
 class BadFlavor(GappyException):
     def __init__(self, offender):
@@ -13,12 +15,13 @@ class BadFlavor(GappyException):
     def offender(self):
         return self.args[0]
 
-PY_3 = sys.version_info.major >= 3
 
 class BadHTTPResponse(GappyException):
     """
-    All requests to Bot API should result in a JSON response. If non-JSON, this
-    exception is raised. While it is hard to pinpoint exactly when this might happen,
+    All requests to Bot API should result in a JSON response.
+
+    If non-JSON, this exception is raised. While it is hard to pinpoint exactly
+    when this might happen,
     the following situations have been observed to give rise to it:
 
     - an unreasonable token, e.g. ``abc``, ``123``, anything that does not even
@@ -41,6 +44,7 @@ class BadHTTPResponse(GappyException):
     def response(self):
         return self.args[2]
 
+
 class EventNotFound(GappyException):
     def __init__(self, event):
         super(EventNotFound, self).__init__(event)
@@ -48,6 +52,7 @@ class EventNotFound(GappyException):
     @property
     def event(self):
         return self.args[0]
+
 
 class WaitTooLong(GappyException):
     def __init__(self, seconds):
@@ -57,16 +62,22 @@ class WaitTooLong(GappyException):
     def seconds(self):
         return self.args[0]
 
+
 class IdleTerminate(WaitTooLong):
     pass
+
 
 class StopListening(GappyException):
     pass
 
+
 class GapError(GappyException):
     """
+    Gap Error.
+
     To indicate erroneous situations, Gap returns a JSON object containing
-    an *error code* and a *description*. This will cause a ``GapError`` to
+    an *error code* and a *description*.
+    This will cause a ``GapError`` to
     be raised. Before raising a generic ``GapError``, telepot looks for
     a more specific subclass that "matches" the error. If such a class exists,
     an exception of that specific subclass is raised. This allows you to either
