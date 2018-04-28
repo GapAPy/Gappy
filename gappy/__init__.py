@@ -470,7 +470,7 @@ class Bot(_BotBase):
         data = json.dumps(dict(phone=phone, name=name))
         del phone, name
         p = _rectify(_strip(locals()))
-        mes = self._api_request('location', p)
+        mes = self._api_request('contact', p)
         return json.loads(mes)['id'] if mes else False
 
     def edit_message(

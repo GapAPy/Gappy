@@ -25,9 +25,9 @@ def _transform(req, **user_kw):
     fields = _compose_fields(req, **user_kw)
     url = _methodurl(req, **user_kw)
     headers = {'token': token}
-    if method == 'sendMessage':
-        return requests.post, {'url': url, 'data': fields, 'headers': headers}
-    elif method == 'upload':
+    if method == 'upload':
+        return requests.post, {'url': url, 'files': fields, 'headers': headers}
+    else:
         return requests.post, {'url': url, 'files': fields, 'headers': headers}
 
 
