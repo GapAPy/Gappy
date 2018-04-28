@@ -28,7 +28,7 @@ def _transform(req, **user_kw):
     if method == 'upload':
         return requests.post, {'url': url, 'files': fields, 'headers': headers}
     else:
-        return requests.post, {'url': url, 'files': fields, 'headers': headers}
+        return requests.post, {'url': url, 'data': fields, 'headers': headers}
 
 
 def _parse(response):

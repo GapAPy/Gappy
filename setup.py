@@ -9,8 +9,9 @@ install_requires = ['requests>=2.18']
 # Parse version
 with open(path.join(here, 'gappy', '__init__.py')) as f:
     m = re.search(
-        '^__version_info__ *= *\(([0-9]+), *([0-9]+)\)',
+        '^__version_info__ *= *\(([0-9]+), *([0-9]+), *([0-9]+)\)',
         f.read(), re.MULTILINE)
+    print(m)
     version = '.'.join(m.groups())
 
 
