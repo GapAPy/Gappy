@@ -5,8 +5,8 @@ python:
  - "3.6"
 before_install:
  - "pip install -U pip"
+ - "python setup.py install"
 install:
  - pip install -r requirements.txt
- - sudo python setup.py install
 script:
  - python test/test.py
