@@ -3,7 +3,7 @@ python:
  - "3.5"
  - "3.6"
 install:
- - pip install .
  - pip install -r requirements.txt
 script:
- - pytest
+ - sudo python3 setup.py install
+ - python3 test/test.py
