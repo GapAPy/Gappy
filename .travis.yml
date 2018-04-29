@@ -3,10 +3,6 @@ sudo: required
 python:
  - "3.5"
  - "3.6"
-before_install:
- - sudo apt-get -qq update
- - sudo apt-get install -y python3
- - sudo apt-get install -y python3-setuptools
 install:
  - pip3 install -r requirements.txt
 script:
