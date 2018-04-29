@@ -20,7 +20,7 @@ setup(
     author="Sadegh Yazdani, Hossein Jafarzadeh, Mostafa Asadi",
     author_email="m.s.yazdani86@gmail.com",
     project_urls={
-        "Source Code": "https://github.com/hsin75/Gappy",
+        "Source Code": "https://github.com/GapAPy/Gappy/",
     },
     install_requires=install_requires,
     packages=find_packages(),
@@ -65,7 +65,7 @@ if __name__ == '__main__':
 ```
 """,
 
-    url='https://github.com/hsin75/Gappy',
+    url='https://github.com/GapAPy/Gappy/',
 
     license='GPL',
 

@@ -1,8 +1,6 @@
-Gappy
-==========
-
-Python framework for Gap Service API
-
+# Gappy
+## Python framework for Gap Service API
+[![Build Status](https://travis-ci.org/GapAPy/Gappy.svg?branch=master)](https://travis-ci.org/GapAPy/Gappy) 
 ### Install Package
 ```
 pip3 install gappy

@@ -9,3 +9,8 @@ install:
  - pip install -r requirements.txt
 script:
  - python test/test.py
+deploy:
+  provider: pypi
+  user: "mostafaasadi"
+  password:
+      secure: "P+G1MJLBFuQa8yfNrCSMG6MnUa2yCbAK66gdX6c9PU798oPkqh8Ng5Ts9marqyMlxUQhB3A2CbtkyA17qovBj/Vi/BKdblhdtVJNZE1JA+UgyOj3feSJ75nlkhLZKQ9Au3MqCAg3KZ6b4pIP+R/wgqgzrq3dk+E5t2qITXSKPKnf1hsNn+PHS1GyrPcL8E+Gesjv/JQNjUbCbw9RLM4es5pPGYgrCo3G002iROnKXh0tFd3T74OEraFxFD6s9rOyno2GKXryqX69yaPb8c2PFl2OTrEnXwW9zVpFxVsvm9W80NtESS+NI23he1yRZKBjPXWgzDSXmpxEvFo1OcTc+mZ1BPcDrHY+jqJ+/ASy19EnCSdzqN1naDlUl5MLto1f8tSQY1eIor295zmEphyGv+ThZ1q4bvvitzKjeQcMgrYMkVEDA5kKBLMuLiVWMAfWJRwM9So9WorIpfOwD5/jmm7AbJrr7e8FGShbm5JOrq6TriBuyUAWaOBr0TwkuH4MHBH6W+6YDtR1xMSL2iiNDax2+oO0y4i/z7AQ1+8ZNgELjeS8TsrRxzAOdoGhgtdqSa+ZpCmXm9mLkJVFoBX3UFU1bq7zCEb36GBO+Kmewf6oMQaPdGjza0waMTNpBojFZdvDKqvIrE7X6YvZ/zpLa6pZvYHlQM5FSvAR6YKIRBo="
