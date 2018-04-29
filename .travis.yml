@@ -3,8 +3,10 @@ sudo: required
 python:
  - "3.5"
  - "3.6"
+before_install:
+ - "pip install -U pip"
 install:
  - pip install -r requirements.txt
- - sudo python setup.py install
 script:
+ - sudo python setup.py install
  - python test/test.py
