@@ -17,7 +17,7 @@ with open(path.join(here, 'gappy', '__init__.py')) as f:
 
 setup(
     name='gappy',
-    packages=['gappy'],
+    # packages=['gappy'],
     author="Sadegh Yazdani, Hossein Jafarzadeh, Mostafa Asadi",
     author_email="m.s.yazdani86@gmail.com",
     project_urls={
