@@ -77,7 +77,7 @@ if __name__ == '__main__':
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Communications :: Chat',
 
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: GPL License',
 
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
