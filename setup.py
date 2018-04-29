@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 from os import path
 import re
 
@@ -24,7 +24,7 @@ setup(
         "Source Code": "https://github.com/hsin75/Gappy",
     },
     install_requires=install_requires,
-
+    packages=find_packages(),
     version=version,
 
     description='Python framework for Gap Service API',

@@ -4,10 +4,10 @@ python:
  - "3.5"
  - "3.6"
 before_install:
-  - "pip install -U pip"
-  - "export PYTHONPATH=$PYTHONPATH:$(pwd)"
+ - "pip install -U pip"
+ - "python setup.py install"
 install:
- - pip3 install -r requirements.txt
+ - pip install -r requirements.txt
 script:
- - sudo python3 setup.py install
- - python3 test/test.py
+ - sudo python setup.py install
+ - python test/test.py
