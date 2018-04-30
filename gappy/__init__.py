@@ -9,7 +9,8 @@ from . import api
 from . import exception
 
 
-__version_info__ = (0, 4, 2)
+__version_info__ = (0, 4, 3)
+
 __version__ = '.'.join(map(str, __version_info__))
 
 
@@ -253,7 +254,7 @@ class Bot(_BotBase):
 
     def send_audio(
         self,
-        hat_id,
+        chat_id,
         audio,
         desc="",
         reply_keyboard=None,
@@ -320,7 +321,7 @@ class Bot(_BotBase):
             # if os.path.isfile(video):
                 # raise ValueError('Video path is invalid')
             type, data = self.upload_file('video', video, desc)
-            del desc
+            del video, desc
             p = _rectify(_strip(locals()))
 
         return self._api_request('sendMessage', p)
@@ -443,6 +444,7 @@ class Bot(_BotBase):
         """
         data = json.dumps(dict(lat=lat, long=long, desc=desc))
         del lat, long, desc
+        type = 'location'
         p = _rectify(_strip(locals()))
         mes = self._api_request('location', p)
         return json.loads(mes)['id'] if mes else False
@@ -467,6 +469,7 @@ class Bot(_BotBase):
         :param form: json
         :return: Array
         """
+        type = 'contact'
         data = json.dumps(dict(phone=phone, name=name))
         del phone, name
         p = _rectify(_strip(locals()))
@@ -632,7 +635,6 @@ class Bot(_BotBase):
             p = json.loads(r.text)
             if desc:
                 p.update({'desc': desc})
-                print(p)
                 return content_type, json.dumps(p)
             else:
                 return content_type, json.dumps(p)
