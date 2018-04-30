@@ -16,9 +16,7 @@ def _fix_type(v):
 def _compose_fields(req, **user_kw):
     token, method, params = req
     fields = {k: _fix_type(v) for k, v in params.items()} if params is not None else {}
-    #if fields.get('data', ''):
-        #return fields['data']
-    #else:
+
     return fields
 
 
