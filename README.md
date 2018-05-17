@@ -53,9 +53,9 @@ if __name__ == '__main__':
 
 ## [Authors](https://github.com/GapAPy/Gappy/graphs/contributors)
 
-- [**Sadegh Yazdani**](http://pypro.blog.ir/) [Github](https://github.com/aerosadegh) [*Silverstar10@gmail.com*](Silverstar10@gmail.com)
-- [**HsiN75**](https://Hsin75.ir) [Github](https://github.com/hsin75) [*hsin0475@gmail.com*](hsin0475@gmail.com)
-- [**Mostafa Asadi**](https://ma73.ir) [Github](https://github.com/mostafaasadi) [*mostafaasadi73@gmail.com*](mostafaasadi73@gmail.com)
+- [**Sadegh Yazdani**](http://pypro.blog.ir/) [Github](https://github.com/aerosadegh) [*Silverstar10@gmail.com*](mailto:Silverstar10@gmail.com)
+- [**HsiN75**](https://Hsin75.ir) [Github](https://github.com/hsin75) [*hsin0475@gmail.com*](mailto:hsin0475@gmail.com)
+- [**Mostafa Asadi**](https://ma73.ir) [Github](https://github.com/mostafaasadi) [*mostafaasadi73@gmail.com*](mailto:mostafaasadi73@gmail.com)
 
 #### See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
